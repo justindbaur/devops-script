@@ -1,0 +1,23 @@
+{
+  "name": "devops-script",
+  "version": "0.0.0",
+  "description": "Script workflows with Azure DevOps api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justindbaur/devops-script.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justindbaur/devops-script/issues"
+  },
+  "homepage": "https://github.com/justindbaur/devops-script#readme",
+  "devDependencies": {
+    "tfx-cli": "^0.12.0"
+  }
+}
