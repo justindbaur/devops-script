@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "42e8e54d-bc08-4bee-9fe1-10b314b3a374",
+  "name": "devops-script",
+  "friendlyName": "Azure DevOps Script",
+  "author": "justindbaur",
+  "version": {
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 2
+  },
+  "description": "Runs a script authenticated against Azure DevOps",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [],
+  "runsOn": [
+    "Agent"
+  ],
+  "instanceNameFormat": "Azure DevOps Script",
+  "groups": [],
+  "inputs": [
+    {
+      "name": "script",
+      "type": "multiLine",
+      "label": "Script",
+      "required": true,
+      "helpMarkDown": "The script to run"
+    },
+    {
+      "name": "resultEncoding",
+      "type": "pickList",
+      "label": "Result Encoding",
+      "defaultValue": "json",
+      "options": {
+        "json": "JSON",
+        "string": "String"
+      }
+    }
+  ],
+  "execution": {
+    "Node10": {
+      "target": "devops-script.js"
+    }
+  }
+}

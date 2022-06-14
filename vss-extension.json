@@ -1,0 +1,33 @@
+{
+  "manifestVersion": 1,
+  "id": "devops-script",
+  "name": "Azure DevOps Script",
+  "version": "0.0.2",
+  "publisher": "justindbaur",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": " Script workflows with Azure DevOps api",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "files": [
+    {
+      "path": "devops-script-task"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "devops-script-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "devops-script-task"
+      }
+    }
+  ]
+}
